@@ -46,6 +46,7 @@ ul{
 }
 
 .file__button{
+  border-radius: 5px 15px;
   background: blue;
   padding: 10px;
   color: azure;
@@ -63,4 +64,26 @@ ul{
   
   display: flex;
   justify-content: space-between;
+}
+
+
+.filesInfo{
+  display: flex;
+  
+}
+
+.search{
+  padding: 10px;
+    margin-top: 19px;
+    font-size: 17px;
+    width: 66%;
+    border-radius: 5px 15px;
+
+}
+
+.info {
+  width: 25%;
+  text-align: center;
+  padding: 0 56px;
+
 }

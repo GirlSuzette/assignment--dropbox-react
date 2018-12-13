@@ -33,7 +33,7 @@ class Search extends React.Component {
         console.log(this.state.results)
         return (
             <React.Fragment>
-                <input onChange={this.searchByName} type="search" placeholder="Search..." />
+                <input onChange={this.searchByName} type="search" className="search" placeholder="Search..." />
                 <Files files={this.state.results} />
             </React.Fragment>
         )

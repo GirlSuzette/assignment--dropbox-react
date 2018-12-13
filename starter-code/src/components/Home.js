@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Filter from './Filter'
 import Search from './Search'
 
 class Home extends Component {
