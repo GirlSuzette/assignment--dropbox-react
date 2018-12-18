@@ -3,6 +3,11 @@ import moment from 'moment';
 
 
 class Filter extends Component {
+    constructor(props) {
+        super(props);
+        console.log(this.props)
+    }
+
     handleClickBtn = () => {
         const { addToInfo, data } = this.props;
         addToInfo(data);
@@ -21,9 +26,11 @@ class Filter extends Component {
                                 <span>Added: {moment(this.props.data.added_at, "YY").fromNow()} ·{this.props.data.category}</span>
                             </p>
                         </div>
-                        <button onClick={this.handleClickBtn} className="file__button">
-                            <i className="fa fa-download"></i>
-                        </button>
+                        <div key={this.props.data.id}>
+                            <button onClick={() => this.handleClickBtn(this.props.data.id)} className="file__button">
+                                <i className="fa fa-download"></i>
+                            </button>
+                        </div>
                     </div>
                 </li>
             </React.Fragment>
